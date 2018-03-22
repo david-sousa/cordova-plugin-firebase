@@ -69,7 +69,7 @@
 		<source-file src="src/android/FirebasePluginMessagingService.java" target-dir="src/org/apache/cordova/firebase" /> -->
 		<source-file src="src/android/colors.xml" target-dir="res/values" />
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
-		<framework src="com.google.gms:google-services:+" />
+		<framework src="com.google.gms:google-services:3.1.1" />
 		<framework src="com.google.android.gms:play-services-tagmanager:11.+" />
 		<framework src="com.google.firebase:firebase-core:11.+" />
 		<!-- <framework src="com.google.firebase:firebase-messaging:+" /> -->
