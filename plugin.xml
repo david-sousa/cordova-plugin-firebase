@@ -12,7 +12,7 @@
 		<clobbers target="fp" />
 	</js-module>
 
-	<hook src="scripts/after_prepare.js" type="after_prepare" />
+	<!-- <hook src="scripts/after_prepare.js" type="after_prepare" /> -->
 
 	<preference name="APP_DOMAIN" />
     <preference name="APP_PATH" default ="/" />
