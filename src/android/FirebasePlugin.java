@@ -12,7 +12,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.iid.FirebaseInstanceId;
-// import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigInfo;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
@@ -112,10 +112,10 @@ public class FirebasePlugin extends CordovaPlugin {
             this.getBadgeNumber(callbackContext);
             return true;
         } else if (action.equals("subscribe")) {
-            // this.subscribe(callbackContext, args.getString(0));
+            this.subscribe(callbackContext, args.getString(0));
             return true;
         } else if (action.equals("unsubscribe")) {
-            // this.unsubscribe(callbackContext, args.getString(0));
+            this.unsubscribe(callbackContext, args.getString(0));
             return true;
         } else if (action.equals("unregister")) {
             this.unregister(callbackContext);
@@ -439,7 +439,7 @@ public class FirebasePlugin extends CordovaPlugin {
         });
     }
 
-    /*
+    
     private void subscribe(final CallbackContext callbackContext, final String topic) {
         cordova.getThreadPool().execute(new Runnable() {
             public void run() {
@@ -466,7 +466,6 @@ public class FirebasePlugin extends CordovaPlugin {
         });
     }
 
-    */
     
     private void unregister(final CallbackContext callbackContext) {
         cordova.getThreadPool().execute(new Runnable() {
